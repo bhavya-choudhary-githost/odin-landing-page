@@ -1,0 +1,1 @@
+This is the landing page assignment from the CSS Foundation exercises of The Odin Project
