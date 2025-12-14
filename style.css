@@ -1,6 +1,7 @@
 *{
     font-family: Roboto;
     font-size: 8px;
+    margin: 0;
 }
 
 header,
@@ -33,7 +34,96 @@ button{
     background-color: #e5e7eb;
 }
 .quote em{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
     color: #1f2937;
 }
+
+/*after this is arrangement using flexbox*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    gap: 6px;
+}
+
+.hero{
+    display: flex;
+    padding: 40px;
+    gap: 12px
+}
+.hero .text,
+ .hero .placeholder{
+    flex: 1
+ }
+
+ .hero .placeholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 48%);
+ }
+ 
+ .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px ;
+ }
+
+ .container .groups{
+    display: flex;
+    justify-content: space-evenly;
+
+ }
+ .groups .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100px;
+    margin:20px
+
+ }
+ .img{
+    height: 100px;
+    width: 100px;
+    border: 2px solid #3882F6;
+    border-radius: 20%;
+ }
+
+ .quote{
+    padding: 30px
+ }
+
+ .quote #thor{
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+ }
+
+ .conclusion{
+    background-color: #3882F6;
+    color: white;
+    padding: 12px;
+    display: flex;
+    justify-content:space-between ;
+    margin: 40px 80px;
+ }
+
+ .conclusion .text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+ }
+ .text .call{
+    font-weight: bold;
+    font-size: 12px;
+ }
+
+ footer{
+    text-align: center;
+ }
